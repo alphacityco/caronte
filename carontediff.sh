@@ -16,7 +16,7 @@
 source config.sh
 
 #Directorio donde se guardarán los respaldos año/mes/dia.tar
-basedir="/home/path/respaldos"
+basedir="/home/path/respaldos/$(hostname -s)"
 annomes=`date +%Y`/`date +%m`
 fullpath="$basedir/$annomes"
 instanfilename=`date +%d`;
